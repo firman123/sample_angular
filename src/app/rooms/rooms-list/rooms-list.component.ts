@@ -13,5 +13,6 @@ export class RoomsListComponent {
     this.selectedRoom.emit(room);
 
     //add comment
+    //cek cel
   }
 }
