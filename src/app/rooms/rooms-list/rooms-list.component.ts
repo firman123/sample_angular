@@ -17,5 +17,6 @@ export class RoomsListComponent {
     //ini adalha sample test yang aku buat
     //buat sample comment
     //add comment lagi
+    //add comment sample1
   }
 }
