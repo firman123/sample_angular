@@ -14,6 +14,7 @@ export class RoomsListComponent {
     //ini comment 1
     //ini comment 2
     //ini comment 3
+    //ini comment 4
     //
   }
 }
