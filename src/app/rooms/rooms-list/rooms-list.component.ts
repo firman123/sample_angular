@@ -13,6 +13,7 @@ export class RoomsListComponent {
     this.selectedRoom.emit(room);
     //ini comment 1
     //ini comment 2
+    //ini comment 3
     //
   }
 }
