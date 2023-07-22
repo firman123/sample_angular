@@ -12,6 +12,7 @@ export class RoomsListComponent {
   selectRoom(room: RoomList) {
     this.selectedRoom.emit(room);
     //ini comment 1
+    //ini comment 2
     //
   }
 }
