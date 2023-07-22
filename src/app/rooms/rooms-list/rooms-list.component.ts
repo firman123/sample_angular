@@ -19,5 +19,6 @@ export class RoomsListComponent {
     //add comment lagi
     //add comment sample1
     //add comment sample 2
+    //add comment sample3
   }
 }
