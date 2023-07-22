@@ -11,10 +11,7 @@ export class RoomsListComponent {
   @Output() selectedRoom = new EventEmitter<RoomList>();
   selectRoom(room: RoomList) {
     this.selectedRoom.emit(room);
-    //ini comment 1
-    //ini comment 2
-    //ini comment 3
-    //ini comment 4
-    //
+
+    //add comment
   }
 }
