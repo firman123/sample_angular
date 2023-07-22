@@ -1,27 +1,20 @@
 <h1>Welcome to {{ hotelName }}</h1>
-<div [hidden]="hideRooms">
+<div [hidden]="hideRooms" [ngStyle]="{ color: 'red' }">
   Number of rooms:
   <div [innerText]="numberOfRooms"></div>
 </div>
 
 {{ rooms?.availableRooms ?? "no rooms" }}
 
+<div *ngIf="selectedRoom">
+  {{ selectedRoom | json }}
+</div>
+
 <div *ngIf="rooms.availableRooms > 1">
-  Room List
-  <table>
-    <tr>
-      <th>Room Type</th>
-      <th>Room Price</th>
-      <th>Room Amneties</th>
-      <th>Checkin Time</th>
-    </tr>
-    <tr *ngFor="let room of roomList">
-      <td>{{ room.roomType }}</td>
-      <td>{{ room.price }}</td>
-      <td>{{ room.amenities }}</td>
-      <td>{{ room.checkinTime }}</td>
-    </tr>
-  </table>
+  <hinv-rooms-list
+    [rooms]="roomList"
+    (selectedRoom)="selectRoom($event)"
+  ></hinv-rooms-list>
 </div>
 
 <button (click)="toggle()">Toggle</button>
